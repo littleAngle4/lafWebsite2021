@@ -2,3 +2,61 @@
     /* margin-left : -1px !important; */
     /* margin-right: -1px !important; */
 }
+
+.fancy {
+    line-height: 0.5;
+    text-align : center;
+}
+
+.fancy span {
+    display : inline-block;
+    position: relative;
+}
+
+.fancy span:before,
+.fancy span:after {
+    content         : "";
+    position        : absolute;
+    height          : 5px;
+    border-bottom   : 1px solid black;
+    /* border-top   : 1px solid black; */
+    top             : 0;
+    width           : 500px;
+}
+
+.fancy span:before {
+    right       : 100%;
+    margin-right: 15px;
+}
+
+.fancy span:after {
+    left       : 100%;
+    margin-left: 15px;
+}
+
+
+
+@media (max-width: 991.98px) {
+
+    .fancy span:before,
+    .fancy span:after {
+        width: 300px;
+    }
+}
+
+/*// Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+
+    .fancy span:before,
+    .fancy span:after {
+        width: 300px;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .fancy span:before,
+    .fancy span:after {
+        width: 100px;
+    }
+}
