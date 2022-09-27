@@ -75,6 +75,8 @@
 // console.log(dataObject);
 // console.log(foundIndex);
 
-const data = {};
-data.type = "equal";
-console.log(data);
+// const data = {};
+// data.type = "equal";
+// console.log(data);
+
+console.log(null > 0);
