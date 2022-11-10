@@ -1,99 +1,119 @@
-// // let text = "Mr Blue has a blue house and a blue car.";
-// // let variable = "blue";
-// // text = text.replace(new RegExp(variable, "gi"), "red");
-// // console.log(text);
+// function stringMask(string, digit) {
+//     try {
+//         let model = {};
+//         let note =
+//             "Please email us on rohansolse@gmail.comfor NPM related suggestions/bugs (with input).";
+//         if (!string || digit == undefined) {
+//             model.status = "failure";
+//             model.response =
+//                 "Ethier string, digit or both are missing or misplaced.";
+//             model.NOTE = note;
+//             return model;
+//         }
+//         if (typeof string == "number") {
+//             string = JSON.stringify(string);
+//         }
+//         if (typeof digit == "string") {
+//             digit = parseInt(digit);
+//         }
+//         if (string == "") {
+//             model.status = "failure";
+//             model.response = "Blank string cannot be processed";
+//             model.NOTE = note;
+//             return model;
+//         }
+//         if (string.length <= digit) {
+//             model.status = "failure";
+//             model.response =
+//                 "Entered string length cannot be equal to greater than the digit count";
+//             model.NOTE = note;
+//             return model;
+//         }
 
-// // function generatePaginationQuery(query, sort, nextKey) {
-// //     const sortField = sort == null ? null : sort[0];
+//         if (digit == 0) {
+//             let data = [];
+//             if (string.length < 3) {
+//                 model.status = "failure";
+//                 model.response =
+//                     "Entered strings length is too less for this operation.";
+//                 model.NOTE = note;
+//                 return model;
+//             }
+//             if (string.length == 3) {
+//                 model.status = "success";
+//                 model.response = string.charAt(0) + "X" + string.charAt(2);
+//                 return model;
+//             }
+//             let unmaskNo = parseInt(string.length / 35 * 10);
+//             for (let i = 0; i < unmaskNo; i++) {
+//                 data.push(string.charAt([i]));
+//             }
+//             let secondunMask = string.length - unmaskNo * 2;
+//             for (let i = 0; i < secondunMask; i++) {
+//                 data.push("X");
+//             }
+//             let remainingStr = string.slice(
+//                 unmaskNo + secondunMask,
+//                 string.length
+//             );
+//             for (let i = 0; i < unmaskNo; i++) {
+//                 data.push(remainingStr.charAt([i]));
+//             }
+//             data = data.join("");
+//             model.status = "success";
+//             model.response = data;
+//             return model;
+//         } else if (digit > 0) {
+//             let data = [];
+//             let unmaskNo = string.length - digit;
+//             let unMask = string.slice(unmaskNo, string.length);
+//             if (unMask.includes(" ")) {
+//                 model.status = "failure";
+//                 model.response = "unmasking value can not be blank";
+//                 model.NOTE = note;
+//                 // console.log(model)
+//                 return model;
+//             }
+//             for (let i = 0; i < unmaskNo; i++) {
+//                 data.push("X");
+//             }
+//             data.push(unMask);
+//             data = data.join("");
+//             model.status = "success";
+//             model.response = data;
+//             // console.log(model)
+//             return model;
+//         } else {
+//             if (string.length <= digit * -1) {
+//                 model.status = "failure";
+//                 model.response =
+//                     "Entered string length cannot be equal to greater than the digit count";
+//                 model.NOTE = note;
+//                 return model;
+//             }
+//             let data = [];
+//             digit = digit * -1;
+//             let maskNo = string.length - digit;
+//             let unmaskNo = string.length - maskNo;
+//             for (let i = 0; i < unmaskNo; i++) {
+//                 data.push(string.charAt([i]));
+//             }
+//             for (let i = 0; i < maskNo; i++) {
+//                 data.push("X");
+//             }
+//             data = data.join("");
+//             model.status = "success";
+//             model.response = data;
+//             // console.log(model)
+//             return model;
+//         }
+//     } catch (e) {
+//         let model = {};
+//         model.status = "failure";
+//         model.response = "Something went wrong, Please check the syntax.";
+//         model.NOTE = note;
+//         return model;
+//     }
+// }
 
-// //     function nextKeyFn(items) {
-// //         if (items.length === 0) {
-// //             return null;
-// //         }
-
-// //         const item = items[items.length - 1];
-
-// //         if (sortField == null) {
-// //             return { _id: item._id };
-// //         }
-
-// //         return { _id: item._id, [sortField]: item[sortField] };
-// //     }
-
-// //     if (nextKey == null) {
-// //         return { paginatedQuery: query, nextKeyFn };
-// //     }
-
-// //     let paginatedQuery = query;
-
-// //     if (sort == null) {
-// //         paginatedQuery._id = { $gt: nextKey._id };
-// //         return { paginatedQuery, nextKey };
-// //     }
-
-// //     const sortOperator = sort[1] === 1 ? "$gt" : "$lt";
-
-// //     const paginationQuery = [
-// //         { [sortField]: { [sortOperator]: nextKey[sortField] } },
-// //         {
-// //             $and: [
-// //                 { [sortField]: nextKey[sortField] },
-// //                 { _id: { [sortOperator]: nextKey._id } }
-// //             ]
-// //         }
-// //     ];
-
-// //     if (paginatedQuery.$or == null) {
-// //         paginatedQuery.$or = paginationQuery;
-// //     } else {
-// //         paginatedQuery = { $and: [query, { $or: paginationQuery }] };
-// //     }
-
-// //     return { paginatedQuery, nextKeyFn };
-// // }
-
-// // let data = {
-// //     type: "equal",
-// //     SAL_VALUE: "sample"
-// // };
-
-// // let keys = Object.keys(data);
-// // let values = Object.values(data);
-
-// // console.log(keys, values);
-
-// // const foundIndex = keys.findIndex(key => key === "type");
-// // const dataObject = {};
-// // if (foundIndex === 0) {
-// //     dataObject.columeName = keys[1];
-// //     dataObject.columeValue = values[1];
-// // } else {
-// //     dataObject.columeName = keys[0];
-// //     dataObject.columeValue = values[0];
-// // }
-
-// // console.log(dataObject);
-// // console.log(foundIndex);
-
-// // const data = {};
-// // data.type = "equal";
-// // console.log(data);
-
-// let myArray = [
-//         { id: 0, name: "Jhon" },
-//         { id: 1, name: "Sara" },
-//         { id: 2, name: "Domnic" },
-//         { id: 3, name: "Bravo" }
-//     ],
-//     //Find index of specific object using findIndex method.
-//     objIndex = myArray.findIndex(obj => obj.id == 2);
-
-// console.log("objIndex: ", objIndex);
-// //Log object to Console.
-// console.log("Before update: ", myArray[objIndex]);
-
-// //Update object's name property.
-// myArray[objIndex].name = "Laila";
-
-// //Log object to console again.
-// console.log("After update: ", myArray[objIndex]);
+// module.exports = stringMask;
