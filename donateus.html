@@ -2,163 +2,237 @@
 <html lang="en">
 
 <head>
-	<title>Little Angel Foundation</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
-	<link rel="stylesheet" href="css/jquery.timepicker.css">
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-		<div class="container">
-			<!-- <a class="navbar-brand" href="#">
-				  <img src="assets/img/logo1.jpg" class="border rounded-circle img-profile" width="30" height="30"  class="d-inline-block align-top" alt="">
-				</a> -->
-			<a class="navbar-brand" href="index.html">Little Angel Foundation</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu mt-auto mx-auto"></span> Menu
-			</button>
-			<div class="collapse navbar-collapse align-items-center" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active mt-auto mx-auto"><a href="index.html" class="nav-link">Home</a></li>
-					<li class="nav-item mt-auto mx-auto"><a href="about.html" class="nav-link">About</a></li>
-					<li class="nav-item mt-auto mx-auto"><a href="gallery.html" class="nav-link">Gallery</a></li>
-					<li class="nav-item mt-auto mx-auto"><a href="projects.html" class="nav-link">Projects</a></li>
-					<li class="nav-item mt-auto mx-auto"><a href="contact.html" class="nav-link">Contact</a></li>
-					<!-- <li class="nav-item cta mt-auto mx-auto"><a href="contact.html" class="nav-link">Donate</a></li> -->
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!-- END nav -->
-
-	<section class="hero-wrap hero-wrap-2" style="background-image: url('assets/img/project/bg_2.jpg');" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row no-gutters slider-text align-items-end">
-				<div class="col-md-9 ftco-animate pb-5">
-					<h1 class="mb-0 bread">Contact us</h1>
-				</div>
-			</div>
-		</div>
-	</section>
+    <title>Little Angel Foundation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
 
-
-
-
-
-
-
-
-    <div class="container">
-        <h2>Make a Donation</h2>
-        <div class="donation-info">
-            <p><strong>A/C Name:</strong> Little Angel Foundation</p>
-            <p><strong>A/c No.:</strong> 37145489638</p>
-            <p><strong>A/c Type:</strong> Current</p>
-            <p><strong>Bank Name & Branch:</strong> State Bank of India, Airoli</p>
-            <p><strong>IFSC Code:</strong> SBIN0003375</p>
-        </div>
-    
-        <div class="payment-section">
-            <h3>Scan to Pay</h3>
-            <!-- Replace with actual QR code image -->
-            <img src="/assets/img/extra/laf scanner.jpeg" alt="QR Code for Donation">
-            <p>Simply scan the QR code to donate easily!</p>
-        </div>
-    </div>
-    
     <style>
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 40px;
-            background-color: white;
+        /* Global styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+        }
+
+        .donation-container {
+            background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 800px;
+            margin: 40px auto;
         }
-        h2 {
-            text-align: center;
-            color: #4CAF50;
+
+        .donation-container h2 {
+            font-size: 2.2em;
+            color: #00796b;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-align: left;
+            border-bottom: 2px solid #00796b;
+            padding-bottom: 10px;
         }
-        .donation-info {
-            margin-bottom: 30px;
-            font-size: 18px;
-        }
+
         .donation-info p {
+            font-size: 1.1em;
             line-height: 1.8;
+            color: #333;
+            margin: 10px 0;
+            text-align: left;
         }
+
         .donation-info strong {
-            color: #4CAF50;
+            color: #00796b;
+            font-weight: 600;
         }
+
+        .donation-info i {
+            margin-right: 10px;
+            color: #00796b;
+            font-size: 1.3em;
+        }
+
         .payment-section {
             text-align: center;
             margin-top: 40px;
         }
+
+        .payment-section h3 {
+            font-size: 1.8em;
+            color: #00796b;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
         .payment-section img {
-            max-width: 300px;
+            max-width: 250px;
+            border: 5px solid #00796b;
+            border-radius: 15px;
             margin-top: 20px;
-            border: 2px solid #4CAF50;
-            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .payment-section img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .payment-section p {
+            font-size: 1.2em;
+            color: #333;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+
+        /* Hero Section */
+        .hero-wrap {
+            background-image: url('assets/img/project/bg_2.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+        }
+
+        .hero-wrap .overlay {
+            background: rgba(0, 0, 0, 0.5);
+            height: 100%;
+        }
+
+        h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.donation-info p {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+        .hero-wrap h1 {
+            color: #fff;
+            font-size: 3em;
+            text-align: center;
+            padding-top: 150px;
+            font-weight: 700;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .donation-container {
+                padding: 30px;
+            }
+
+            .donation-container h2 {
+                font-size: 1.8em;
+            }
+
+            .payment-section img {
+                max-width: 200px;
+            }
         }
     </style>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Little Angel Foundation</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu mt-auto mx-auto"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse align-items-center" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item mt-auto mx-auto"><a href="donateus.html" class="nav-link">Donate Us</a></li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Hero Section -->
+<section class="hero-wrap hero-wrap-2" style="background-image: url('assets/img/project/bg_2.jpg');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-end">
+            <div class="col-md-9 ftco-animate pb-5">
+                <h1 class="mb-0 bread">Donate Us</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Ensure background and text are visible */
+    .hero-wrap {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Overlay styling */
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);  /* Semi-transparent overlay */
+        z-index: 1;  /* Place the overlay behind the text */
+    }
+
+    /* Text styling */
+    .hero-wrap h1 {
+        color: white;  /* White text color */
+        font-size: 48px;  /* Adjust size */
+        font-weight: bold;  /* Make text bold */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Optional: Adds a shadow for better visibility */
+        position: relative;
+        z-index: 2;  /* Ensure text appears above the overlay */
+    }
+
+    /* Ensure text alignment and padding */
+    .slider-text {
+        position: relative;
+        z-index: 2;
+        padding-bottom: 20px;  /* Add bottom padding if needed */
+    }
+</style>
+
+
+    <!-- Donation Section -->
+    <div class="donation-container">
+        <h2><i class="fa fa-handshake"></i> Make a Donation</h2>
+        
+        <div class="donation-info">
+            <p><i class="fa fa-user-circle"></i> <strong>A/C Name:</strong> Little Angel Foundation</p>
+            <p><i class="fa fa-credit-card"></i> <strong>A/c No.:</strong> 37145489638</p>
+            <p><i class="fa fa-university"></i> <strong>A/c Type:</strong> Current</p>
+            <p><i class="fa fa-building"></i> <strong>Bank Name & Branch:</strong> State Bank of India, Airoli</p>
+            <p><i class="fa fa-random"></i> <strong>IFSC Code:</strong> SBIN0003375</p>
+        </div>
     
+        <div class="payment-section">
+            <h3><i class="fa fa-qrcode"></i> Scan to Pay</h3>
+            <img src="/assets/img/extra/laf scanner.jpeg" alt="QR Code for Donation">
+            <p><i class="fa fa-arrow-right"></i> Simply scan the QR code to donate easily!</p>
+        </div>
+    </div>
 
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-	<footer class="footer">
+    <footer class="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
@@ -215,7 +289,6 @@
 			</div>
 			<div class="row mt-5">
 				<div class="col-md-12 text-center">
-
 					<p class="copyright">
 						Copyright &copy;
 						<script>document.write(new Date().getFullYear());</script> Little Angel Foundation. All rights reserved.</a>
@@ -224,32 +297,6 @@
 			</div>
 		</div>
 	</footer>
-
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen">
-		<svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
-		</svg>
-	</div>
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/bootstrap-datepicker.js"></script>
-	<script src="js/jquery.timepicker.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-	<script src="js/google-map.js"></script>
-	<script src="js/main.js"></script>
-
 </body>
 
 </html>
