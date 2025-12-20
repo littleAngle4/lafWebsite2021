@@ -40,7 +40,39 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    /* Make sure images inside the carousel adjust correctly */
+    .carousel-item img {
+        width: 100%;        /* Make images take up 100% of the container */
+        height: auto;       /* Maintain aspect ratio */
+        object-fit: cover;  /* Ensure the image covers the container */
+    }
 
+    /* Ensure carousel and controls are responsive on smaller screens */
+    @media (max-width: 768px) {
+        #galleryCarouselIndependence {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    /* Additional styling to control carousel dimensions on very small screens */
+    @media (max-width: 480px) {
+        .carousel-control-prev, .carousel-control-next {
+            width: 15px;
+            height: 15px;
+        }
+
+        .carousel-indicators li {
+            width: 10px;
+            height: 10px;
+        }
+
+        .card-text {
+            font-size: 1rem;  /* Make font size smaller for mobile screens */
+        }
+    }
+</style>
 </head>
 
 <body>
@@ -151,6 +183,324 @@
         <div class="container">
             <p class="subtitle fancy"><span><b>2025</b></span></p><br><br>
             <!-- Bootstrap Carousel -->
+
+<!-- PATNI SLUMP-->
+
+ <div id="galleryCarouselMorningHope" class="carousel slide" data-ride="carousel"
+     style="width: 80%; max-width: 600px; margin-left: auto; margin-right: auto;">
+
+    <!-- Carousel Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#galleryCarouselMorningHope" data-slide-to="0" class="active"></li>
+        <li data-target="#galleryCarouselMorningHope" data-slide-to="1"></li>
+        <li data-target="#galleryCarouselMorningHope" data-slide-to="2"></li>
+        <li data-target="#galleryCarouselMorningHope" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Carousel Inner -->
+    <div class="carousel-inner" style="max-height: 500px; overflow: hidden;">
+        <div class="carousel-item active">
+            <a href="assets/img/2025/PATNI1.JPG">
+                <img src="assets/img/2025/PATNI1.JPG"
+                     class="d-block w-100" alt="Morning of Hope 1"
+                     style="height: 400px; max-height: 500px;">
+            </a>
+        </div>
+
+        <div class="carousel-item">
+            <a href="assets/img/2025/PATNI2.JPG">
+                <img src="assets/img/2025/PATNI2.JPG"
+                     class="d-block w-100" alt="Morning of Hope 2"
+                     style="height: 400px; max-height: 500px;">
+            </a>
+        </div>
+
+        <div class="carousel-item">
+            <a href="assets/img/2025/PATNI3.JPG">
+                <img src="assets/img/2025/PATNI3.JPG"
+                     class="d-block w-100" alt="Morning of Hope 3"
+                     style="height: 400px; max-height: 500px;">
+            </a>
+        </div>
+
+        
+    </div>
+
+    <!-- Carousel Controls -->
+    <a class="carousel-control-prev" href="#galleryCarouselMorningHope" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"
+              style="width: 20px; height: 20px;"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#galleryCarouselMorningHope" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"
+              style="width: 20px; height: 20px;"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<br>
+
+<div class="card-body text-center" style="padding: 20px; font-family: 'Poppins', sans-serif;">
+    <p class="card-text" style="font-size: 1.1rem;">
+        🌅📚 <strong>Morning of Hope at Patni Slum – Sector 19</strong><br><br>
+
+        Every morning, children arrive with <strong>curiosity in their eyes and hope in their hearts</strong>.  
+        Our morning batch is not just about lessons — it is about <em>care, discipline, and belief</em>. 💛<br><br>
+
+        🌱 Despite challenging surroundings, these young minds come eager to learn, grow, and dream big.  
+        Each class builds <strong>confidence, knowledge, and courage</strong>.<br><br>
+
+        🤝 <strong>Visit our centre. Volunteer with us. Support their journey.</strong><br>
+        Together, we create lasting change — <em>one morning at a time</em>.
+    </p>
+</div>
+
+
+<!--CHILDREN DAY-->
+
+<div id="galleryCarouselJoyGiving" class="carousel slide" data-ride="carousel"
+     style="width: 80%; max-width: 600px; margin-left: auto; margin-right: auto;">
+
+    <!-- Carousel Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#galleryCarouselJoyGiving" data-slide-to="0" class="active"></li>
+        <li data-target="#galleryCarouselJoyGiving" data-slide-to="1"></li>
+        <li data-target="#galleryCarouselJoyGiving" data-slide-to="2"></li>
+        <li data-target="#galleryCarouselJoyGiving" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Carousel Inner -->
+    <div class="carousel-inner" style="max-height: 500px; overflow: hidden;">
+        <div class="carousel-item active">
+            <a href="assets/img/2025/CD1.JPG">
+                <img src="assets/img/2025/CD1.JPG"
+                     class="d-block w-100" alt="Joy of Giving 1"
+                     style="height: 400px; max-height: 500px;">
+            </a>
+        </div>
+
+        <div class="carousel-item">
+            <a href="assets/img/2025/CD2.JPG">
+                <img src="assets/img/2025/CD2.JPG"
+                     class="d-block w-100" alt="Joy of Giving 2"
+                     style="height: 400px; max-height: 500px;">
+            </a>
+        </div>
+
+       
+    </div>
+
+    <!-- Carousel Controls -->
+    <a class="carousel-control-prev" href="#galleryCarouselJoyGiving" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"
+              style="width: 20px; height: 20px;"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#galleryCarouselJoyGiving" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"
+              style="width: 20px; height: 20px;"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<br>
+
+<div class="card-body text-center" style="padding: 20px; font-family: 'Poppins', sans-serif;">
+    <p class="card-text" style="font-size: 1.1rem;">
+        🎁🎈 <strong>Joy of Giving on Children’s Day</strong><br><br>
+
+        On the occasion of <strong>Children’s Day</strong>, 
+        <strong>New Horizon Public School, Airoli</strong> celebrated the spirit of 
+        <em>Joy of Giving</em> with the students of <strong>Little Angel Foundation</strong>, 
+        making the day truly joyful and memorable. 🌸<br><br>
+
+        📚 Every year, NHP School supports our mission by providing 
+        <strong>essential educational materials</strong> for our children.<br><br>
+
+        🙏 We extend our heartfelt thanks to 
+        <strong>Director Ms. Abha Jadav</strong>, 
+        <strong>Principal Ms. Monalisa Basu</strong>, 
+        and the entire <strong>NHP team</strong> for their kindness, generosity, 
+        and continued support in shaping brighter futures.
+    </p>
+</div>
+
+<!--RIO CLUB-->
+<div id="galleryCarouselPurpose" class="carousel slide" data-ride="carousel"
+     style="width: 80%; max-width: 600px; margin-left: auto; margin-right: auto;">
+
+    <!-- Carousel Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#galleryCarouselPurpose" data-slide-to="0" class="active"></li>
+        <li data-target="#galleryCarouselPurpose" data-slide-to="1"></li>
+        <li data-target="#galleryCarouselPurpose" data-slide-to="2"></li>
+        <li data-target="#galleryCarouselPurpose" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Carousel Inner -->
+    <div class="carousel-inner" style="max-height: 500px; overflow: hidden;">
+        <div class="carousel-item active">
+            <a href="assets/img/2025/RIO1.JPG">
+                <img src="assets/img/2025/RIO1.JPG"
+                     class="d-block w-100" alt="Playing for a Purpose 1"
+                     style="height: 400px; max-height: 500px;">
+            </a>
+        </div>
+
+        <div class="carousel-item">
+            <a href="assets/img/2025/RIO2.JPG">
+                <img src="assets/img/2025/RIO2.JPG"
+                     class="d-block w-100" alt="Playing for a Purpose 2"
+                     style="height: 400px; max-height: 500px;">
+            </a>
+        </div>
+
+        <div class="carousel-item">
+            <a href="assets/img/2025/RIO3.JPG">
+                <img src="assets/img/2025/RIO3.JPG"
+                     class="d-block w-100" alt="Playing for a Purpose 3"
+                     style="height: 400px; max-height: 500px;">
+            </a>
+        </div>
+
+      
+    </div>
+
+    <!-- Carousel Controls -->
+    <a class="carousel-control-prev" href="#galleryCarouselPurpose" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"
+              style="width: 20px; height: 20px;"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#galleryCarouselPurpose" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"
+              style="width: 20px; height: 20px;"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<br>
+
+<div class="card-body text-center" style="padding: 20px; font-family: 'Poppins', sans-serif;">
+    <p class="card-text" style="font-size: 1.1rem;">
+        🏏📚 <strong>Playing for a Purpose: Supporting Education</strong><br><br>
+
+        <strong>Little Angel Foundation</strong> extends heartfelt thanks to 
+        <strong>Rio Club</strong> and the <strong>Rio Social Welfare Cup</strong> 
+        for their generous support towards our educational initiatives. 💙<br><br>
+
+        📺✏️ Through this meaningful contribution, essential items such as 
+        <strong>a television, whiteboard, mats, and other learning materials</strong> 
+        were donated to our study centres.<br><br>
+
+        🌱 These resources will help create a more <strong>engaging and comfortable 
+        learning environment</strong>, supporting the academic growth and overall 
+        development of our children.<br><br>
+
+        🤝 This initiative beautifully shows how <em>sports and social responsibility</em> 
+        can come together to make a lasting impact.<br><br>
+
+        🌟 <strong>Together, we can make a difference.</strong>
+    </p>
+</div>
+
+
+<!--INSIPRIRING DAY-->
+
+<div id="galleryCarouselInspiringDay" class="carousel slide" data-ride="carousel"
+     style="width: 80%; max-width: 600px; margin-left: auto; margin-right: auto;">
+
+    <!-- Carousel Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#galleryCarouselInspiringDay" data-slide-to="0" class="active"></li>
+        <li data-target="#galleryCarouselInspiringDay" data-slide-to="1"></li>
+        <li data-target="#galleryCarouselInspiringDay" data-slide-to="2"></li>
+        <li data-target="#galleryCarouselInspiringDay" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Carousel Inner -->
+    <div class="carousel-inner" style="max-height: 500px; overflow: hidden;">
+        <div class="carousel-item active">
+            <a href="assets/img/2025/INS1.JPG">
+                <img src="assets/img/2025/INS1.JPG"
+                     class="d-block w-100" alt="Inspiring Day 1"
+                     style="height: 400px; max-height: 500px;">
+            </a>
+        </div>
+
+        <div class="carousel-item">
+            <a href="assets/img/2025/INS2.JPG">
+                <img src="assets/img/2025/INS2.JPG"
+                     class="d-block w-100" alt="Inspiring Day 2"
+                     style="height: 400px; max-height: 500px;">
+            </a>
+        </div>
+
+        <div class="carousel-item">
+            <a href="assets/img/2025/INS3.JPG">
+                <img src="assets/img/2025/INS3.JPG"
+                     class="d-block w-100" alt="Inspiring Day 3"
+                     style="height: 400px; max-height: 500px;">
+            </a>
+        </div>
+
+        <div class="carousel-item">
+            <a href="assets/img/2025/INS4.JPG">
+                <img src="assets/img/2025/INS4.JPG"
+                     class="d-block w-100" alt="Inspiring Day 4"
+                     style="height: 400px; max-height: 500px;">
+            </a>
+        </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <a class="carousel-control-prev" href="#galleryCarouselInspiringDay" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"
+              style="width: 20px; height: 20px;"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#galleryCarouselInspiringDay" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"
+              style="width: 20px; height: 20px;"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<br>
+
+<div class="card-body text-center" style="padding: 20px; font-family: 'Poppins', sans-serif;">
+    <p class="card-text" style="font-size: 1.1rem;">
+        🎬✨ <strong>Inspiring Day at Little Angel Foundation</strong><br><br>
+
+        Little Angel Foundation organized a <strong>motivational film screening session</strong> 
+        for its students in the presence of 
+        <strong>Dr. Rakesh Agarwal</strong>, Founder, Laser Technologies Pvt. Ltd., and 
+        <strong>Ms. Pankti Agarwal</strong>, Executive Director & Co-Owner, Laser Technologies Pvt. Ltd. 🌟<br><br>
+
+        🎥 The students watched <em>“Rising Bharat”</em> and <em>“I Am Kalam”</em>, 
+        which beautifully highlighted the values of 
+        <strong>education, perseverance, and hope</strong>.<br><br>
+
+        💬 The interaction and inspiring journeys shared by the esteemed guests 
+        encouraged students to <strong>dream big and stay consistent</strong> in their efforts.<br><br>
+
+        🙏 Little Angel Foundation sincerely thanks 
+        <strong>Dr. Rakesh Ji</strong>, <strong>Ms. Pankti Ji</strong>, 
+        and the <strong>Tata Volunteers</strong> for their valuable support and contribution.
+    </p>
+</div>
+
+
+
+
+
+
+
 
 <!-- independence day-->
 
